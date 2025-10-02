@@ -7,11 +7,15 @@ public class ifcetakKRS13 {
         boolean uktDibayar = sc.nextBoolean();
         sc.close();
 
-        if (uktDibayar) {
-            System.out.println("pembayaran UKT sudah lunas.");
-            System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA.");
-        } else {
-            System.out.println("Registrasi ditolak. silahkan lakukan pembayaran UKT terlebih dahulu.");
-        }
+        uktDibayar = uktDibayar ? true : false;
+        System.out.println(uktDibayar ? "pembayaran UKT sudah lunas.\nSilahkan cetak KRS dan minta tanda tangan DPA." : "Registrasi ditolak. silahkan lakukan pembayaran UKT terlebih dahulu.");
+
+        
+        // if (uktDibayar) {
+        //     System.out.println("pembayaran UKT sudah lunas.");
+        //     System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA.");
+        // } else {
+        //     System.out.println("Registrasi ditolak. silahkan lakukan pembayaran UKT terlebih dahulu.");
+        // }
     }
 }
